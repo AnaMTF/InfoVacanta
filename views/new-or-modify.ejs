@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edit Blog</title>
+        <link rel="stylesheet" href="/styles/main.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1><%= heading %></h1>
+
+            <% if (locals.post) { %>
+            <form id="editForm" method="post" action="/api/posts/<%=post.id%>">
+                <input type="text" name="title" value="<%=post.title %>" />
+                <textarea id="content" rows="10"><%=post.content %></textarea>
+                <button class="full-width" type="submit"><%= submit %></button>
+            </form>
+            <% } else {%>
+            <form id="newPostForm" method="post" action="/reviews">
+                <input type="text" name="destinationname" placeholder="Destinația turistică vizitată" required />
+                <textarea
+                    name="reviewbody"
+                    placeholder="Scrieți recenzia aici..."
+                    required
+                    rows="10"
+                ></textarea>
+                <button class="full-width" type="submit" id="publicaBtn"><%= submit %></button>
+            </form>
+            <% } %>
+            <a class="full-width" href="/main" id="cancelBtn">Anulează</a>
+        </div>
+    </body>
+</html>
+<%- include('partials/footer') %>

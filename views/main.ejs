@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog InfoVacanță</title>
+        <link rel="stylesheet" href="/styles/main.css" />
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>InfoVacanță</h1>
+            <a id="newPostBtn" href="/new">Recenzie Nouă</a>
+            <a id="logoutBtn" href="/logout">Logout</a>
+            <ul id="postsList">
+                <% reviews.forEach(review => { %>
+                <li>
+                    <h2><%=review.destinationname %></h2>
+                    <small> <%=review.reviewcategory %> </small>
+                    <p><%=review.reviewbody%></p>
+                    <small>By: <%=review.authornickname%> </small>
+                    <a class="edit" href="">Editează</a>
+                    <a class="delete" href="">Șterge</a>
+                    <a class="comment" href="">Lasă un comentariu</a>
+                </li>
+                <% }); %>
+            </ul>
+        </div>
+    </body>
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+        window.botpressWebChat.init({
+            composerPlaceholder: "Scrie-i ceva lui Botty",
+            botConversationDescription:
+                "Botty este botul AI care vă stă la dispoziție",
+            botId: "75424437-4b00-4535-8cf2-b56dbabe0397",
+            hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+            messagingUrl: "https://messaging.botpress.cloud/",
+            clientId: "75424437-4b00-4535-8cf2-b56dbabe0397",
+            webhookId: "f1d5dc6e-e28e-4e62-8e00-02d5e3cffc22",
+            lazySocket: true,
+            themeName: "prism",
+            botName: "Botty",
+            avatarUrl:
+                "https://cdn3.iconfinder.com/data/icons/chat-bot-emoji-blue-filled-color/300/14134081Untitled-3-4096.png",
+            stylesheet:
+                "https://webchat-styler-css.botpress.app/prod/e0c38c6d-8c1a-422c-a62c-563006270605/v25930/style.css",
+            frontendVersion: "v1",
+            useSessionStorage: true,
+            showBotInfoPage: true,
+            enableConversationDeletion: true,
+            showPoweredBy: true,
+            theme: "prism",
+            themeColor: "#2563eb",
+        });
+    </script>
+</html>
+<%- include('partials/footer') %>

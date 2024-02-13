@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog InfoVacanță</title>
+        <link rel="stylesheet" href="/styles/main.css" />
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    </head>
+    <body>
+<div class="contact-container">
+    <form action="" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Contactați-ne!</h2>
+            <hr>
+        </div>
+        <input type="text" name="name" placeholder="Numele Dumneavoastră" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Emailul Dumneavoastră" class="contact-inputs" required>
+        <textarea name="message" placeholder="Mesajul Dumneavoastră" class="contact-inputs" required></textarea>
+        <button type="submit" class="contact-btn">Trimiteți <img src="/images/arrow_icon.png" alt="arrow image"></button>
+    </form>
+
+    <div class="contact-right">
+<img src="/images/right_img.png" alt="imagine formular">
+    </div>
+</div>
+</body>
+<%- include('partials/footer') %>
