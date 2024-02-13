@@ -255,6 +255,13 @@ a.comment:hover {
   gap: 20px;
 }
 
+.contact-right{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
 .contact-left-title h2{
   font-weight: 600;
   color: #a363aa;
@@ -300,7 +307,7 @@ border-radius: 20px;
 .contact-left button{
   display: flex;
   align-items: center;
-  padding: 15px 30 px;
+  padding: 15px 30px;
   font-size: 16px;
   color: #fff;
   gap: 10px;
@@ -320,6 +327,7 @@ border-radius: 20px;
 
 .contact-right img{
   width: 500px;
+  height: 462px;
 }
 
 @media (max-width:800px) {
@@ -331,19 +339,57 @@ border-radius: 20px;
   }
 }
 
-#contact-back-btn{
-  display: flex;
+.contact-container-bot img{
+  width: 500px;
+  transform: scaleX(-1);
+}
+
+.contact-container-bot button img{
+  height: 15px;
+  width: 15px;
+}
+
+.contact-container-bot button{
+display: flex;
   align-items: center;
-  padding: 15px 30 px;
+  padding: 15px 30px;
   font-size: 16px;
   color: #fff;
   gap: 10px;
   border: none;
   border-radius: 50px;
   background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
 }
 
 #contact-back-btn:hover{
   background: linear-gradient(270deg, #fa6d86, #ff994f);
 
+}
+
+.footer{
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
