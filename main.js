@@ -97,7 +97,14 @@ app.get("/new", (req, res) => {
     res.render("new-or-modify.ejs", { heading: "Recenzie nouă", submit: "Publică" });
 });
 app.get("/contact", (req, res) => {
-    res.render("contact.ejs");
+    console.log("/contact");
+    console.log(req.session.passport.user);
+    if (req.isAuthenticated()) {
+        res.render("contact.ejs");
+    }
+    else {
+        res.redirect("/login");
+    }
 });
 app.post("/reviews", async (req, res) => {
     console.log("/reviews");
