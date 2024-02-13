@@ -98,13 +98,14 @@ app.get("/new", (req, res) => {
 });
 app.get("/contact", (req, res) => {
     console.log("/contact");
-    console.log(req.session.passport.user);
+    // console.log(req.session.passport.user);
     if (req.isAuthenticated()) {
         res.render("contact.ejs");
     }
     else {
         res.redirect("/login");
     }
+    // res.render("contact.ejs");
 });
 app.post("/reviews", async (req, res) => {
     console.log("/reviews");
@@ -270,7 +271,7 @@ passport.use(
                 );
                 if (result.rows.length === 0) {
                     const newUser = await db.query(
-                        "INSERT INTO users (email, userpassword, fullname, nickname) VALUES ($1, $2, $3) RETURNING *",
+                        "INSERT INTO users (email, userpassword, fullname, nickname) VALUES ($1, $2, $3, $4) RETURNING *",
                         [profile.email, "", profile.displayName, profile.displayName] //<-- Parola este goala pentru ca utilizatorul este autentificat cu Google
                     );
                     cb(null, newUser.rows[0]);
