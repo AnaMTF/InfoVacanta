@@ -19,3 +19,7 @@
   overflow:visible;
   max-height: 70px;
 }
+
+.dropdown-menu {
+  z-index: 100000;
+}

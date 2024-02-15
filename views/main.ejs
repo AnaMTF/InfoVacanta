@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/main.css">
 
     <body>
-        <div class="container-fluid jumbotron">
+        <div class="container-fluid jumbotron centered">
             <h1>InfoVacanță</h1>
             <a id="newPostBtn" href="/new">Recenzie Nouă</a>
             <a id="logoutBtn" href="/logout">Logout</a>
@@ -13,7 +13,7 @@
                     <small> <%=review.reviewcategory %> </small>
                     <p><%=review.reviewbody%></p>
                     <small>By: <%=review.authornickname%> </small>
-                    <a class="edit" href="">Editează</a>
+                    <a class="edit" href="/modify">Editează</a>
                     <a class="delete" href="">Șterge</a>
                     <a class="comment" href="">Lasă un comentariu</a>
                 </li>

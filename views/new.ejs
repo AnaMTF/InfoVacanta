@@ -1,8 +1,7 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="css/new.css">
 
-    <body>
-        <div class="container">
+        <div class="container jumbotron centered">
             <h1><%= heading %></h1>
 
             <% if (locals.post) { %>
@@ -25,6 +24,4 @@
             <% } %>
             <a class="full-width" href="/main" id="cancelBtn">Anulează</a>
         </div>
-    </body>
-</html>
 <%- include('partials/footer') %>

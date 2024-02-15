@@ -51,6 +51,10 @@ app.get("/destinatii", (req, res) => {
     res.render("destinatii.ejs");
 });
 
+app.get("/modify", (req, res) => {
+    res.render("profil.ejs");
+});
+
 app.get("/login", (req, res) => {
     // Daca utilizatorul este autentificat, redirectioneaza-l catre pagina de secrete
     if (req.isAuthenticated()) {
@@ -102,7 +106,7 @@ app.get("/main", async (req, res) => {
 app.get("/new", (req, res) => {
     console.log("/new");
     console.log(req.session.passport.user); //<-- Testare (user primit de la passport)
-    res.render("new-or-modify.ejs", { heading: "Recenzie nouă", submit: "Publică" });
+    res.render("new.ejs", { heading: "Recenzie nouă", submit: "Publică" });
 });
 app.get("/contact", (req, res) => {
     console.log("/contact");
