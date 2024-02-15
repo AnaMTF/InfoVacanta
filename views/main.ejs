@@ -11,13 +11,13 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container-fluid jumbotron">
             <h1>InfoVacanță</h1>
             <a id="newPostBtn" href="/new">Recenzie Nouă</a>
             <a id="logoutBtn" href="/logout">Logout</a>
-            <ul id="postsList">
+            <ul id="postsList" class="list-group">
                 <% reviews.forEach(review => { %>
-                <li>
+                <li class="list-group-item list-group-item-action" id="postsItems">
                     <h2><%=review.destinationname %></h2>
                     <small> <%=review.reviewcategory %> </small>
                     <p><%=review.reviewbody%></p>
@@ -31,31 +31,29 @@
         </div>
     </body>  
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script>
-        window.botpressWebChat.init({
-            composerPlaceholder: "Scrie-i ceva lui Botty",
-            botConversationDescription:
-                "Botty este botul AI care vă stă la dispoziție",
-            botId: "75424437-4b00-4535-8cf2-b56dbabe0397",
-            hostUrl: "https://cdn.botpress.cloud/webchat/v1",
-            messagingUrl: "https://messaging.botpress.cloud/",
-            clientId: "75424437-4b00-4535-8cf2-b56dbabe0397",
-            webhookId: "f1d5dc6e-e28e-4e62-8e00-02d5e3cffc22",
-            lazySocket: true,
-            themeName: "prism",
-            botName: "Botty",
-            avatarUrl:
-                "https://cdn3.iconfinder.com/data/icons/chat-bot-emoji-blue-filled-color/300/14134081Untitled-3-4096.png",
-            stylesheet:
-                "https://webchat-styler-css.botpress.app/prod/e0c38c6d-8c1a-422c-a62c-563006270605/v25930/style.css",
-            frontendVersion: "v1",
-            useSessionStorage: true,
-            showBotInfoPage: true,
-            enableConversationDeletion: true,
-            showPoweredBy: true,
-            theme: "prism",
-            themeColor: "#2563eb",
-        });
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Scrie-i ceva lui Botty",
+      "botConversationDescription": "Botty este botul AI care vă stă la dispoziție",
+      "botId": "75424437-4b00-4535-8cf2-b56dbabe0397",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "75424437-4b00-4535-8cf2-b56dbabe0397",
+      "webhookId": "f1d5dc6e-e28e-4e62-8e00-02d5e3cffc22",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Botty",
+      "avatarUrl": "https://cdn3.iconfinder.com/data/icons/chat-bot-emoji-blue-filled-color/300/14134081Untitled-3-4096.png",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/f66bbd04-0073-44e9-8d43-be21a551ac8c/v74897/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "showBotInfoPage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
     </script>
 </html>
 <%- include('partials/footer') %>

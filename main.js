@@ -43,6 +43,14 @@ app.get("/", (req, res) => {
     res.render("home.ejs");
 });
 
+app.get("/profil", (req, res) => {
+    res.render("profil.ejs");
+});
+
+app.get("/destinatii", (req, res) => {
+    res.render("destinatii.ejs");
+});
+
 app.get("/login", (req, res) => {
     // Daca utilizatorul este autentificat, redirectioneaza-l catre pagina de secrete
     if (req.isAuthenticated()) {
@@ -211,7 +219,7 @@ passport.use(
     "local",
     // Strategie locala de autentificare
     // Parametrului `username` nu trebuie sa i se schimbe numele!
-    
+
     new Strategy(async function verify(username, password, cb) {
         console.log("username:", username); //<-- Testare
         console.log("password:", password); //<-- Testare

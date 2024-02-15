@@ -1,0 +1,653 @@
+{
+  "toInsert": [
+    {
+      "email": "ana.popescu@email.com",
+      "reviews": [
+        "Am avut parte de priveliști uimitoare în Ranca. Muntele Parâng oferă peisaje impresionante, iar aerul tare a contribuit la o experiență revigorantă.",
+        "Am avut parte de apă caldă și confortabilă în Cavnic. Hotelurile au oferit servicii bune, iar atmosfera generală a fost relaxantă."
+      ]
+    },
+    { "email": "radu.ionescu@email.com", "reviews": [] },
+    {
+      "email": "maria.dumitrescu@email.com",
+      "reviews": [
+        "Azuga este o stațiune montană primitoare. Pârtiile sunt bine amenajate, iar atmosfera este relaxantă. O opțiune excelentă pentru o evadare liniștită în natură."
+      ]
+    },
+    { "email": "adrian.stan@email.com", "reviews": [] },
+    {
+      "email": "elena.vasile@email.com",
+      "reviews": [
+        "Neptun oferă plaje liniștite și promenade frumoase. Am avut șansa să experimentăm latura mai relaxată a litoralului la Neptun.",
+        "Venus oferă plaje frumoase și peisaje romantice. Plimbările de-a lungul falezei și serile liniștite au creat o atmosferă de neuitat."
+      ]
+    },
+    {
+      "email": "andrei.popa@email.com",
+      "reviews": [
+        "Am avut parte de apă caldă și confortabilă în hotelul din Bușteni. Stațiunea oferă și opțiuni de relaxare în spațiile de wellness.",
+        "Ranca este o stațiune montană plină de energie. Am avut parte de aventuri pe schi și atmosferă vibrantă. Un loc excelent pentru tineri și familii.",
+        "Am avut parte de apă caldă și confortabilă în Borșa. Hotelurile au oferit servicii bune, iar atmosfera a fost primitoare."
+      ]
+    },
+    {
+      "email": "ioana.gheorghe@email.com",
+      "reviews": [
+        "Experiența la Mamaia a fost ca într-un furnicar. Turiștii peste tot, serviciile slabe, și plaja suprasaturată. Nu voi mai reveni.",
+        "Poiana Brașov oferă și activități non-schi, precum drumețiile în munți sau plimbările cu sania. O destinație versatilă pentru toate gusturile."
+      ]
+    },
+    {
+      "email": "florin.munteanu@email.com",
+      "reviews": [
+        "Am avut parte de apă caldă și confortabilă la Sinaia. Hotelurile sunt primitoare, iar serviciile locale au fost de înaltă calitate."
+      ]
+    },
+    { "email": "camelia.marin@email.com", "reviews": [] },
+    {
+      "email": "alexandru.stoica@email.com",
+      "reviews": [
+        "Am avut parte de distracție maximă la Costinești. Concerte pe plajă, activități non-stop și oameni cu energie ă."
+      ]
+    },
+    { "email": "gabriela.radu@email.com", "reviews": [] },
+    {
+      "email": "ion.barbu@email.com",
+      "reviews": [
+        "Am întâlnit mulți vânzători ambulanți insistenți la Vama Veche. Aceasta a creat o atmosferă incomodă pe plajă.",
+        "Distanța până la restaurantele și barurile din centru poate fi o problemă la Jupiter. Noaptea, plimbarea devine destul de lungă și neplăcută.",
+        "O ședere reușită la Saturn. Serviciile excelente și plaja curată au contribuit la o experiență ă de vacanță.",
+        "Apa la Mangalia nu a fost întotdeauna foarte curată. În unele zile, am observat impurități și pete de ulei pe suprafața apei."
+      ]
+    },
+    {
+      "email": "raluca.moldovan@email.com",
+      "reviews": [
+        "Am petrecut momente de basm în Sinaia. Zăpada proaspătă și pârtiile bine întreținute au creat condiții ideale pentru schi și snowboarding.",
+        "Prețurile în Poiana Brașov sunt destul de ridicate, atât pentru cazare, cât și pentru activități. Pentru cei cu bugete mai reduse, poate fi o destinație costisitoare."
+      ]
+    },
+    {
+      "email": "mircea.dragomir@email.com",
+      "reviews": [
+        "Am avut parte de experiențe neplăcute cu unii turiști la Costinești. Atmosfera poate deveni cam ostilă.",
+        "Plaja la Neptun este mai mică și se aglomerează destul de repede. Locurile bune de relaxare sunt ocupate rapid."
+      ]
+    },
+    {
+      "email": "larisa.marinescu@email.com",
+      "reviews": [
+        "Restaurantele din Venus nu oferă o varietate prea mare de opțiuni. Pentru cineva care vrea să experimenteze bucătăria locală, poate fi o deluzie.",
+        "Sinaia oferă și atracții culturale, precum Castelul Peleș. Combinarea distracției în aer liber cu explorarea istoriei face din această stațiune un loc unic.",
+        "Predeal este o stațiune prietenoasă pentru familii. Activitățile recreative în aer liber și facilitățile pentru copii fac din această destinație potrivită pentru vacanțe în familie.",
+        "Am avut acces la apă caldă în majoritatea hotelurilor din Predeal. După o zi pe pârtii, o baie relaxantă este exact ce ai nevoie."
+      ]
+    },
+    {
+      "email": "bogdan.ciobanu@email.com",
+      "reviews": [
+        "Parcările în Poiana Brașov pot fi o problemă în timpul sezonului de vârf. Găsirea unui loc potrivit poate fi o provocare."
+      ]
+    },
+    {
+      "email": "andreea.stanescu@email.com",
+      "reviews": [
+        "Bucovina este o destinație versatilă, potrivită atât pentru iubitorii de natură, cât și pentru cei interesați de istorie și artă."
+      ]
+    },
+    {
+      "email": "silviu.ungureanu@email.com",
+      "reviews": [
+        "Am venit la Vama Veche pentru aventură, și am găsit-o. Plimbări pe plajă sub lună, focuri de tabără și conversații interesante cu oameni din toate colțurile țării.",
+        "Cavnicul oferă și alte activități în afară de schi, precum drumeții și plimbări cu sania. O stațiune versatilă pentru toate gusturile.",
+        "Am avut parte de dificultăți în găsirea unor locuri de parcare în Borșa. Parcările pot fi limitate, mai ales în sezonul de vârf.",
+        "Bucovina oferă o combinație unică de peisaje montane și patrimoniu cultural. Am avut parte de drumeții în Munții Rarău și vizitarea mănăstirilor renumite."
+      ]
+    },
+    {
+      "email": "oana.cojocaru@email.com",
+      "reviews": [
+        "Costinești este locul perfect pentru tineri. Petreceri pe plajă, muzică bună și atmosferă vibrantă. O experiență de neuitat.",
+        "Am avut parte de apă caldă și confortabilă la Păltiniș. Hotelurile au oferit servicii bune, iar atmosfera generală a fost primitoare."
+      ]
+    },
+    {
+      "email": "andrei.popescu@email.com",
+      "reviews": [
+        "Am avut parte de condiții meteo schimbătoare la Predeal. Este important să fii pregătit pentru schimbări rapide ale vremii."
+      ]
+    },
+    { "email": "alina.iacob@email.com", "reviews": [] },
+    { "email": "cristian.vasilescu@email.com", "reviews": [] },
+    {
+      "email": "elena.stanescu@email.com",
+      "reviews": [
+        "Serviciile în Eforie Sud sunt destul de scumpe. Restaurantele și activitățile au prețuri mai mari decât în alte stațiuni."
+      ]
+    },
+    {
+      "email": "adrian.tudor@email.com",
+      "reviews": [
+        "Am apreciat plaja curată și serviciile bune la Eforie Sud. Este o stațiune prietenoasă pentru familii și cupluri.",
+        "Unele drumuri către atracțiile din Bucovina pot fi dificile, cu serpentine și porțiuni înguste. Șoferii trebuie să fie pregătiți pentru condiții variate de conducere."
+      ]
+    },
+    { "email": "roxana.dumitrascu@email.com", "reviews": [] },
+    {
+      "email": "marius.radulescu@email.com",
+      "reviews": [
+        "Restaurantele din Păltiniș sunt destul de puține, iar meniul poate fi limitat. Pentru o varietate mai mare, trebuie să explorezi și zonele din apropiere."
+      ]
+    },
+    {
+      "email": "ana.dumitru@email.com",
+      "reviews": [
+        "Mamaia are o atmosferă de vară minunată. Am petrecut serile plimbându-mă pe faleză și admirând apusurile spectaculoase. O experiență de neuitat."
+      ]
+    },
+    {
+      "email": "gabriel.ciocan@email.com",
+      "reviews": [
+        "Saturn poate părea cam aglomerată în sezonul de vârf. Găsirea unui loc liniștit pe plajă poate fi dificilă."
+      ]
+    },
+    { "email": "laura.preda@email.com", "reviews": [] },
+    {
+      "email": "radu.stefanescu@email.com",
+      "reviews": [
+        "Bușteni are și facilități pentru drumeții montane. Traseele sunt bine semnalizate, iar peisajele sunt impresionante."
+      ]
+    },
+    {
+      "email": "elena.popovici@email.com",
+      "reviews": [
+        "Saturn este stațiunea perfectă pentru familii. Plaja prietenoasă pentru copii și oferta diversificată de activități recreative fac din Saturn un loc ideal pentru vacanțe în familie.",
+        "Mangalia are o plajă bine întreținută și un centru istoric interesant. O combinație perfectă între relaxare și explorare culturală.",
+        "Ranca poate deveni destul de aglomerată în timpul sezonului de vârf. Cozi la telescaune și agitație pe pârtii pot fi o problemă în zilele aglomerate.",
+        "Am întâlnit condiții meteo schimbătoare în Borșa. Este important să fii pregătit pentru schimbări rapide ale vremii, în special în sezonul de iarnă."
+      ]
+    },
+    { "email": "bogdan.oprea@email.com", "reviews": [] },
+    { "email": "adriana.gheorghiu@email.com", "reviews": [] },
+    { "email": "valentin.ivan@email.com", "reviews": [] },
+    {
+      "email": "ana-maria.nistor@email.com",
+      "reviews": [
+        "Bucovina poate fi mai puțin dezvoltată în ceea ce privește facilitățile pentru sporturile de iarnă. Pentru cei interesați de schi, ar putea fi necesar să exploreze și alte stațiuni."
+      ]
+    },
+    {
+      "email": "george.serban@email.com",
+      "reviews": [
+        "Starea dușurilor și facilităților publice la Saturn lasă de dorit. Unele zone ar putea beneficia de o întreținere mai bună.",
+        "Unele facilități în Borșa pot părea depășite. Modernizarea unor telescaune și investiții în infrastructură ar putea îmbunătăți experiența generală."
+      ]
+    },
+    {
+      "email": "diana.radu@email.com",
+      "reviews": [
+        "Sederile la Neptun sunt relaxante și plăcute. Oamenii sunt prietenoși, iar serviciile locale sunt de încredere.",
+        "Venus este perfectă pentru o vacanță romantică. Plaja este liniștită, iar atmosfera este plină de romantism. Un loc minunat pentru cupluri îndrăgostite.",
+        "Am observat că, în unele zile, pârtiile din Păltiniș pot fi aglomerate, ceea ce poate afecta experiența de schi."
+      ]
+    },
+    { "email": "ionut.simion@email.com", "reviews": [] },
+    {
+      "email": "loredana.stan@email.com",
+      "reviews": [
+        "Am avut parte de experiențe minunate de schi la Predeal. Pârtiile sunt variate, iar condițiile de zăpadă sunt de obicei foarte bune.",
+        "Am avut parte de aglomerație pe pârtii în weekenduri. Pentru cei care caută liniște și relaxare, zilele de lucru pot fi o opțiune mai bună."
+      ]
+    },
+    {
+      "email": "robert.dima@email.com",
+      "reviews": [
+        "Am întâlnit probleme cu curățenia plajei la Venus. În unele zone, gunoaiele nu erau colectate corespunzător."
+      ]
+    },
+    {
+      "email": "gabriela.varga@email.com",
+      "reviews": [
+        "Pârtiile de schi din Păltiniș sunt potrivite pentru toate nivelele de experiență. Atmosfera prietenoasă face din această stațiune un loc plăcut pentru iubitorii de sporturi de iarnă."
+      ]
+    },
+    {
+      "email": "victor.pop@email.com",
+      "reviews": [
+        "Plaja la Neptun este mai mică și se aglomerează destul de repede. Locurile bune de relaxare sunt ocupate rapid.",
+        "Am avut parte de unele probleme cu animalele pe plajă la Saturn. Câini vagabonzi și pisici pot crea disconfort, în special pentru cei cu copii."
+      ]
+    },
+    {
+      "email": "raluca.ilie@email.com",
+      "reviews": [
+        "Am avut parte de o vacanță linistită la Mangalia. Stațiunea are un farmec aparte, iar serviciile locale au fost de încredere. Plaja curată și atmosfera relaxată au contribuit la o vacanță reușită."
+      ]
+    },
+    { "email": "florin.neacsu@email.com", "reviews": [] },
+    { "email": "ana-maria.popa@email.com", "reviews": [] },
+    {
+      "email": "gabriel.stanescu@email.com",
+      "reviews": [
+        "Am avut parte de momente minunate la Saturn. Plaja este bine întreținută, iar facilitățile pentru copii au făcut șederea noastră relaxantă și distractivă."
+      ]
+    },
+    {
+      "email": "larisa.popescu@email.com",
+      "reviews": [
+        "Eforie Sud nu oferă prea multe opțiuni pentru petrecerea serilor. Lipsa de distracție poate fi o problemă pentru cei care caută agitație."
+      ]
+    },
+    {
+      "email": "alexandru.petrescu@email.com",
+      "reviews": [
+        "Starea plajei la Eforie Sud lasă de dorit. Nisipul era cam murdar, iar personalul de pe plajă nu prea se ocupa de curățenie."
+      ]
+    },
+    { "email": "elena.mihai@email.com", "reviews": [] },
+    {
+      "email": "radu.iacob@email.com",
+      "reviews": [
+        "Apa la Mamaia este cristalină, iar nisipul fin este perfect pentru plajă. Există multe activități de petrecut timpul, iar localurile oferă mâncare delicioasă.",
+        "Am petrecut un weekend minunat la Eforie Sud. Plaja a fost curată, iar serviciile din apropiere au făcut șederea noastră confortabilă.",
+        "Jupiter este o bijuterie ascunsă. Plaja este frumoasă, iar atmosfera liniștită este perfectă pentru cupluri și familii. Un loc de relaxare autentic.",
+        "Păltiniș oferă peisaje montane pitorești. Am avut parte de drumeții memorabile și aer proaspăt. O stațiune potrivită pentru iubitorii de natură."
+      ]
+    },
+    {
+      "email": "mihaela.albu@email.com",
+      "reviews": [
+        "Pârtiile din Ranca au fost pe măsură așteptărilor. Diversele activități recreative și evenimentele organizate au făcut șederea noastră foarte plăcută.",
+        "Am avut dificultăți în găsirea unor trasee de drumeții bine marcate în Cavnic. Mai multe informații privind rutele ar putea îmbunătăți experiența drumeției."
+      ]
+    },
+    {
+      "email": "adrian.popovici@email.com",
+      "reviews": [
+        "Am petrecut un sejur liniștit la Păltiniș. Stațiunea este mai puțin aglomerată, iar posibilitățile de relaxare sunt numeroase."
+      ]
+    },
+    {
+      "email": "roxana.moldovan@email.com",
+      "reviews": [
+        "Plaja la Mamaia este atât de aglomerată încât nu poți găsi un loc decent. Muzica tare din jur face imposibilă relaxarea. Un haos total.",
+        "Pârtiile din Borșa sunt potrivite pentru schiorii de toate nivelurile. De la începători la avansați, toată lumea poate găsi trasee pe gustul lor."
+      ]
+    },
+    {
+      "email": "mihai.stanescu@email.com",
+      "reviews": [
+        "Am avut parte de apă caldă și confortabilă în hotelul din Azuga. Personalul a fost primitoare și atentă la nevoile noastre."
+      ]
+    },
+    {
+      "email": "andreea.tudor@email.com",
+      "reviews": [
+        "Jupiter este cam pustie în privința activităților. Cei care caută distracție și agitație ar putea fi dezamăgiți de lipsa evenimentelor și a localurilor animaționate."
+      ]
+    },
+    {
+      "email": "cosmin.popa@email.com",
+      "reviews": [
+        "Am fost la Mamaia într-un weekend și nu am găsit loc de parcare. Locația este supraaglomerată și nu este potrivită pentru cei care caută liniște."
+      ]
+    },
+    { "email": "iulia.vasile@email.com", "reviews": [] },
+    { "email": "ionut.munteanu@email.com", "reviews": [] },
+    {
+      "email": "irina.iliescu@email.com",
+      "reviews": [
+        "Mamaia rămâne regina litoralului. Plaja este imaculată, serviciile sunt de calitate, iar atmosfera este vibrantă. O destinație perfectă pentru distracție și relaxare.",
+        "Am găsit opțiuni limitate pentru activități distractive în Neptun. Pentru cei care caută mai multă animație, poate fi cam plictisitor."
+      ]
+    },
+    { "email": "stefan.radu@email.com", "reviews": [] },
+    {
+      "email": "elena.popescu@email.com",
+      "reviews": [
+        "Neptun este o oază de liniște. Plaja este curată, apa limpede, și atmosfera generală este relaxantă. Perfect pentru o vacanță fără agitație."
+      ]
+    },
+    {
+      "email": "costin.stanciu@email.com",
+      "reviews": [
+        "Am fost dezamăgit de condițiile de cazare la Costinești. Camerele erau mici și neîngrijite, iar serviciile lăsau de dorit."
+      ]
+    },
+    {
+      "email": "roxana.serban@email.com",
+      "reviews": [
+        "Muzica tare la Costinești este deranjantă, mai ales în timpul nopții. Greu să te odihnești în condițiile astea.",
+        "Am întâlnit aglomerație și în zona pârtiilor în timpul sezonului de schi. Așteptarea la telescaunuri poate fi destul de lungă în zilele aglomerate."
+      ]
+    },
+    {
+      "email": "marius.popovici@email.com",
+      "reviews": [
+        "Restaurantele din Azuga sunt destul de puține și pot fi ocupate în timpul sezonului de vârf. Planificarea rezervărilor este recomandată."
+      ]
+    },
+    {
+      "email": "alexandra.negreanu@email.com",
+      "reviews": [
+        "Vama Veche este destul de dezordonată. Plaja nu este curățată regulat, iar gunoaiele se adună. Nu este pentru cei care caută confort.",
+        "Prețurile în Saturn sunt destul de mari, în special în restaurante. Pentru cei care caută opțiuni mai accesibile, poate fi o provocare.",
+        "Am întâlnit condiții meteo schimbătoare în Azuga. Este important să fii pregătit pentru schimbări rapide ale vremii, în special în sezonul de iarnă."
+      ]
+    },
+    {
+      "email": "florin.vasile@email.com",
+      "reviews": [
+        "Păltiniș poate părea cam liniștit pentru cei care caută mai multă agitație. Opțiunile de divertisment sunt limitate.",
+        "Restaurantele din Cavnic sunt destul de puține, iar opțiunile pot fi limitate. Planificarea rezervărilor este recomandată, mai ales în sezonul de vârf."
+      ]
+    },
+    {
+      "email": "andreea.stan@email.com",
+      "reviews": [
+        "Am avut parte de curenti puternici în zona de baie din Mangalia. Este important să fii atent și să nu te aventurezi prea departe în apă, mai ales dacă nu ești un înotător experimentat."
+      ]
+    },
+    {
+      "email": "liviu.nistor@email.com",
+      "reviews": [
+        "Borșa poate fi destul de aglomerată în timpul sezonului de schi. Cozi la telescaune și agitație pe pârtii pot să apară în zilele aglomerate."
+      ]
+    },
+    { "email": "mihaela.cojocaru@email.com", "reviews": [] },
+    {
+      "email": "victor.serban@email.com",
+      "reviews": [
+        "Plimbarea pe faleză în Mangalia în timpul serii este o experiență de neuitat. Luminițele și briza mării creează o atmosferă romantică.",
+        "Cavnicul este o stațiune montană autentică. Am avut parte de o experiență autentică, cu pârtii bine întreținute și atmosferă primitoare."
+      ]
+    },
+    {
+      "email": "maria.stanescu@email.com",
+      "reviews": [
+        "Marea la Eforie Nord era foarte adâncă imediat după intrare, nu prea potrivită pentru copii mici. Aviz celor care călătoresc cu familia.",
+        "Am avut parte de experiențe neplăcute cu câțiva turiști la Vama Veche. Unele comportamente pot deranja, iar atmosfera poate deveni tensionată.",
+        "Am avut parte de o vacanță liniștită la Neptun. Plaja este potrivită pentru familii, iar facilitățile din apropiere au fost foarte utile.",
+        "Predeal poate fi destul de rece, chiar și în timpul sezonului de vară. Pentru cei care caută o destinație mai călduroasă, poate nu este alegerea potrivită."
+      ]
+    },
+    {
+      "email": "gabriel.tudor@email.com",
+      "reviews": [
+        "Pe timp de vară, Sinaia poate fi destul de aglomerată. Drumurile și atracțiile turistice pot fi supraaglomerate, ceea ce afectează experiența de vizitare."
+      ]
+    },
+    {
+      "email": "elena.gheorghe@email.com",
+      "reviews": [
+        "Am avut parte de condiții meteo schimbătoare în Ranca. Este important să fii pregătit pentru schimbări rapide ale vremii, în special în sezonul de iarnă."
+      ]
+    },
+    {
+      "email": "catalin.popescu@email.com",
+      "reviews": [
+        "Am întâmpinat dificultăți în găsirea unor trasee de schi bine marcate în Bucovina. Informațiile privind condițiile pârtiilor ar putea fi mai bine comunicate."
+      ]
+    },
+    {
+      "email": "simona.preda@email.com",
+      "reviews": [
+        "Poiana Brașov este destinția ideală pentru iubitorii de schi. Pârtiile bine întreținute și infrastructura modernă fac din această stațiune un paradis al sporturilor de iarnă.",
+        "Bușteni poate fi aglomerat în timpul sezonului turistic. Așteptarea la atracții și restaurante poate fi destul de lungă."
+      ]
+    },
+    { "email": "daniel.ilie@email.com", "reviews": [] },
+    {
+      "email": "mihaela.marin@email.com",
+      "reviews": [
+        "Am venit la Costinești pentru distracție și am găsit exact asta. Serile sunt pline de viață, iar plaja devine ring de dans."
+      ]
+    },
+    { "email": "radu.popovici@email.com", "reviews": [] },
+    {
+      "email": "ana-maria.albu@email.com",
+      "reviews": [
+        "Sinaia este destul de scumpă, în special în ceea ce privește cazarea și unele activități. Pentru bugete mai reduse, ar putea fi o destinație costisitoare."
+      ]
+    },
+    {
+      "email": "andrei.ionescu@email.com",
+      "reviews": [
+        "Eforie Sud are o promenadă plăcută pentru plimbări seara. Atmosfera este calmă și relaxantă, perfectă pentru cupluri.",
+        "Am găsit prea multe alge în apa de la Eforie Sud. Acest aspect a stricat puțin experiența de baie.",
+        "Petrecerea la Vama Veche este de neegalat. Muzică non-stop, oameni prietenoși, și libertate totală. Un loc unde poți fi cu adevărat tu însuți."
+      ]
+    },
+    {
+      "email": "gabriela.cretu@email.com",
+      "reviews": [
+        "Parcările în Bușteni sunt limitate, iar în zilele aglomerate poate fi dificil să găsești un loc de parcare.",
+        "Am observat că prețurile în Bușteni sunt destul de mari, atât pentru cazare, cât și pentru anumite activități. Planificarea unui buget adecvat este esențială."
+      ]
+    },
+    {
+      "email": "florin.stan@email.com",
+      "reviews": [
+        "Nu am găsit prea multe opțiuni de divertisment la Jupiter. Este o stațiune pentru cei care caută liniște și relaxare, nu pentru cei dornici de aventură.",
+        "Am observat că unele pârtii din Poiana Brașov sunt destul de abrupte și pot fi potrivite doar pentru schiorii avansați. Cei începători ar putea fi descurajați."
+      ]
+    },
+    {
+      "email": "alina.popescu@email.com",
+      "reviews": [
+        "Muzica tare din unele locuri din Ranca poate deranja pe cei care caută liniște și relaxare. Stațiunea este potrivită pentru cei mai activi."
+      ]
+    },
+    {
+      "email": "stefan.marin@email.com",
+      "reviews": [
+        "Parcările în Azuga pot fi limitate, iar găsirea unui loc de parcare poate fi o provocare în zilele aglomerate.",
+        "Serviciile în Ranca au fost la înălțime. Hotelurile au fost primitoare, iar personalul a fost dedicat să ofere o ședere plăcută."
+      ]
+    },
+    {
+      "email": "ioana.vasile@email.com",
+      "reviews": [
+        "Am avut ghinion cu vremea la Eforie Nord. Ploua în mare parte a timpului și nu existau prea multe opțiuni pentru activități indoor.",
+        "Am întâlnit aglomerație pe traseele de drumeții în unele zile. Este recomandat să alegi rute mai puțin frecventate pentru o experiență mai liniștită.",
+        "Stațiunea oferă o atmosferă autentică. Am avut parte deservicii prietenoase în hoteluri și am savurat bucate tradiționale în restaurantele locale."
+      ]
+    },
+    {
+      "email": "alexandru.barbu@email.com",
+      "reviews": [
+        "Parcările în Bucovina pot fi limitate în unele zone. Deplasareacu mașina în regiune ar putea necesita puțină planificare suplimentară."
+      ]
+    },
+    {
+      "email": "maria.dumitru@email.com",
+      "reviews": [
+        "Costinești este destinația ideală pentru cei care caută aventurăși socializare. Plaja este locul perfect pentru întâlniri cu prietenii."
+      ]
+    },
+    {
+      "email": "radu.andreescu@email.com",
+      "reviews": [
+        "Restaurantele în Neptun sunt destul de scumpe, iar varietateameniului este limitată. Nu prea ai unde să mănânci altceva în afara hotelului.",
+        "Jupiter are oatmosferă relaxantă. Plimbările pe plajă și serile liniștite fac din această stațiune un loc perfectpentru relaxare și contemplare.",
+        "Azuga are o atmosferă mai puțin aglomerată comparativ cualte stațiuni montane. Este o alegere excelentă pentru cei care caută liniște și intimitate."
+      ]
+    },
+    {
+      "email": "elena.ivan@email.com",
+      "reviews": [
+        "Predeal oferă un peisaj montan deosebit. Aerul proaspăt șipriveliștea panoramică asupra munților fac din această stațiune o alegere excelentă pentrurelaxare.",
+        "Restaurantele din Predeal sunt destul de scumpe în comparație cu alte stațiuni.Găsirea opțiunilor mai accesibile poate fi o provocare.",
+        "Am avut parte de experiențeminunate de schi în Bușteni. Pârtiile sunt diversificate, iar condițiile de zăpadă sunt în generalbune."
+      ]
+    },
+    { "email": "adrian.pop@email.com", "reviews": [] },
+    {
+      "email": "loredana.gheorghiu@email.com",
+      "reviews": [
+        "Eforie Sud oferă o atmosferă liniștită și plaje întinse. A fosto alegere excelentă pentru o vacanță relaxantă la mare."
+      ]
+    },
+    {
+      "email": "florin.cojocaru@email.com",
+      "reviews": [
+        "Eforie Nord oferă o atmosferă liniștită. Plaja este curată, iarmarea are o culoare uimitoare. Perfect pentru o evadare relaxantă.",
+        "M-am simțit ca într-unparadis liniștit la Jupiter. Plaja curată, valurile blânde și serviciile bune au contribuit la oexperiență de vacanță relaxantă.",
+        "Sinaia este o stațiune montană minunată. Peisajele suntimpresionante, iar aerul curat face din această destinație un loc perfect pentru iubitorii denatură."
+      ]
+    },
+    {
+      "email": "andreea.radulescu@email.com",
+      "reviews": [
+        "Bușteni oferă peisaje montane spectaculoase. MunteleCaraiman și Castelul Cantacuzino sunt atracții remarcabile. O destinație ideală pentruiubitorii de natură și istorie.",
+        "Borșa oferă peisaje montane impresionante. Am avut parte deaventuri de schi memorabile și priveliști spectaculoase asupra Munților Rodnei."
+      ]
+    },
+    { "email": "catalin.popa@email.com", "reviews": [] },
+    {
+      "email": "mihaela.barbu@email.com",
+      "reviews": [
+        "Azuga poate părea cam liniștită pentru cei care caută viață denoapte și agitație. Opțiunile de divertisment sunt limitate în comparație cu alte stațiuni."
+      ]
+    },
+    { "email": "valentin.ilie@email.com", "reviews": [] },
+    {
+      "email": "roxana.dragomir@email.com",
+      "reviews": [
+        "Am petrecut momente minunate la Jupiter. Plaja nu esteaglomerată, iar marea este calmă. O stațiune perfectă pentru cei care caută intimitate.",
+        "Mangalia este predispusă la valuri mai mari în comparație cu alte stațiuni. Cei care nu suntobișnuiți cu marea agitată ar putea să nu se bucure de baie în anumite zile."
+      ]
+    },
+    { "email": "ionut.ungureanu@email.com", "reviews": [] },
+    {
+      "email": "alina.stoica@email.com",
+      "reviews": [
+        "Venus nu are prea multe opțiuni pentru divertisment. Cei carecaută activități intense ar putea fi dezamăgiți.",
+        "Am avut parte de apă caldă și confortabilă înhotelul din Poiana Brașov. Oaspeții sunt tratați cu atenție și grijă.",
+        "Borșa este o stațiunepotrivită și pentru vara, cu numeroase trasee de drumeții și posibilități de explorare anaturii."
+      ]
+    },
+    {
+      "email": "andrei.ivan@email.com",
+      "reviews": [
+        "Serviciile la plajă din Venus sunt destul de scumpe, iar calitatea nujustifică întotdeauna prețul ridicat."
+      ]
+    },
+    { "email": "raluca.preda@email.com", "reviews": [] },
+    {
+      "email": "vlad.iliescu@email.com",
+      "reviews": [
+        "Am apreciat variatele activități recreative din Azuga. De la schi ladrumeții, stațiunea oferă o gamă diversificată de opțiuni pentru distracție."
+      ]
+    },
+    { "email": "ioana.radu@email.com", "reviews": [] },
+    {
+      "email": "lucian.popescu@email.com",
+      "reviews": [
+        "Plaja la Costinești este atât de aglomerată încât nu poți să tebucuri de relaxare. Imposibil să găsești un loc liniștit pe nisip.",
+        "Vama Veche este un loc unic,plin de personalitate. Atmosfera boemă și relaxată o fac perfectă pentru cei care caută cevadiferit.",
+        "Marea la Vama Veche poate fi periculoasă. Valurile puternice și lipsa desupraveghere pot pune în pericol pe cei mai puțin experimentați în apă."
+      ]
+    },
+    {
+      "email": "maria.dragomir@email.com",
+      "reviews": [
+        "Mangalia oferă o atmosferă relaxantă. Plaja este liniștită, iarpriveliștea asupra mării este spectaculoasă. O destinație potrivită pentru cei care cautăliniște.",
+        "Infrastructura în Cavnic poate părea depășită în unele zone. Unele telescaune șifacilități ar putea avea nevoie de modernizare."
+      ]
+    },
+    {
+      "email": "ionut.albu@email.com",
+      "reviews": [
+        "Plimbarea pe faleza din Eforie Nord este o experiență minunată.Aerul proaspăt și briza mării fac din această stațiune un loc ideal pentru relaxare.",
+        "Am avutparte de servicii excelente la Poiana Brașov. Personalul este ospitalier, iar condițiile de cazaresunt la înălțime."
+      ]
+    },
+    {
+      "email": "gabriela.radulescu@email.com",
+      "reviews": [
+        "Saturn are o atmosferă plăcută. Plimbările pe plajă șiactivitățile de agrement fac din această stațiune o alegere bună pentru vacanțe relaxante.",
+        "Am avut parte de câteva probleme cu algele pe plaja din Mangalia. În anumite zile, acesteaerau mai vizibile și puteau fi neplăcute pentru cei care voiau să se scalde."
+      ]
+    },
+    {
+      "email": "mihai.stoian@email.com",
+      "reviews": [
+        "Am avut parte de o experiență relaxantă la Venus. Plaja esteamenajată frumos, iar facilitățile din apropiere sunt suficiente pentru a te bucura de vacanță.",
+        "Am întâmpinat dificultăți în găsirea locurilor de parcare în Ranca. Parcările pot fi ocupaterapid, mai ales în zilele aglomerate."
+      ]
+    },
+    {
+      "email": "elena.moldovan@email.com",
+      "reviews": [
+        "Aventura la Mamaia a fost excelentă. Marea este perfectăpentru sporturi acvatice, iar cluburile de noapte oferă distracție până dimineața.",
+        "Amîntâmpinat dificultăți în găsirea unor trasee de drumeții mai ușoare în Păltiniș. Informațiileprivind potecile mai accesibile ar putea fi mai bine semnalizate."
+      ]
+    },
+    { "email": "catalin.marin@email.com", "reviews": [] },
+    {
+      "email": "gabriela.nistor@email.com",
+      "reviews": [
+        "Eforie Nord are o plajă prietenoasă pentru familii. Nu este atâtde aglomerată ca alte stațiuni, iar facilitățile pentru copii sunt bine puse la punct.",
+        "EforieNord este cam plictisitoare. Nu există multe activități de făcut în afara plajei și apromenadelor.",
+        "Plaja la Eforie Nord nu este atât de curată pe cât se spune. Gunoaiele penisip și în apă pot strica experiența de vacanță."
+      ]
+    },
+    {
+      "email": "radu.cojocaru@email.com",
+      "reviews": [
+        "Pârtiile din Cavnic sunt potrivite pentru schiorii de toatenivelele. Am apreciat diversitatea traseelor și condițiile bune de schi."
+      ]
+    },
+    { "email": "larisa.popa@email.com", "reviews": [] },
+    { "email": "alin.stanescu@email.com", "reviews": [] },
+    {
+      "email": "adriana.popovici@email.com",
+      "reviews": [
+        "Mamaia a fost dezamăgitoare. Plaja era plină de gunoaie, iarapa avea o miros neplăcut. Prețurile în restaurante sunt exorbitante.",
+        "Am avut parte de apăcaldă și confortabilă în Bucovina. Cazări tradiționale și facilități primitoare au contribuit la oexperiență plăcută."
+      ]
+    },
+    { "email": "valentin.barbu@email.com", "reviews": [] },
+    { "email": "andreea.ilie@email.com", "reviews": [] },
+    {
+      "email": "stefan.preda@email.com",
+      "reviews": [
+        "Am avut parte de probleme cu insectele la Jupiter. Există multemuște și țânțari, ceea ce a afectat confortul șederii noastre."
+      ]
+    },
+    { "email": "roxana.nistor@email.com", "reviews": [] },
+    {
+      "email": "radu.simion@email.com",
+      "reviews": [
+        "Vama Veche este un refugiu pentru sufletele libere. Plaja sălbatică,marea agitată și stilul de viață relaxat. O experiență autentică."
+      ]
+    },
+    {
+      "email": "irina.ionescu@email.com",
+      "reviews": [
+        "Am observat că unele pârtii din Sinaia sunt potrivite doar pentruschiorii avansați. Cei începători ar putea avea dificultăți."
+      ]
+    },
+    {
+      "email": "daniel.cojocaru@email.com",
+      "reviews": [
+        "Am observat că în weekenduri, Predeal devine destul deaglomerat. Parcările pot fi pline, și atmosfera devine mai zgomotoasă."
+      ]
+    },
+    {
+      "email": "maria.stan@email.com",
+      "reviews": [
+        "A fost o ședere minunată la Venus. O stațiune mică, dar cu unfarmec aparte. Plaja curată și serviciile bune fac din Venus un loc recomandat.",
+        "Am observatcă unele pârtii din Cavnic pot fi aglomerate în weekenduri. Așteptarea la telescaune și agitațiape pârtii pot afecta experiența de schi."
+      ]
+    },
+    { "email": "gabriel.vasile@email.com", "reviews": [] },
+    {
+      "email": "ana-maria.dragomir@email.com",
+      "reviews": [
+        "Am avut parte de o ședere relaxantă la Eforie Nord. Plajalină și hotelurile primitoare au creat o atmosferă plăcută de vacanță."
+      ]
+    }
+  ]
+}
