@@ -27,6 +27,7 @@ p::selection, small::selection, h1::selection, h2::selection, a::selection, butt
 
 h1{
   background-color: #e9fbfe90;
+  border-radius: 40px;
 }
 
 .jumbotron {
@@ -113,7 +114,7 @@ button {
   padding: 10px;
   font-size: 1em;
   border: none;
-  border-radius: 4px;
+  border-radius: 40px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

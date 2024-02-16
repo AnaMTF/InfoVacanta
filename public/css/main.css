@@ -3,7 +3,6 @@
   background-color: #A987DA;
   padding: 10px 15px;
   font-size: 1em;
-  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
   border: none;
@@ -56,7 +55,6 @@ a.comment:hover {
   background-color: #FFE3E0;
   padding: 10px 15px;
   font-size: 1em;
-  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
   border: none;
@@ -67,4 +65,14 @@ a.comment:hover {
 
 #newPostBtn:hover {
   background-color: #f0d6d3;
+}
+
+.list-group-item , .list-group-item:first-child{
+  margin: 10px;
+  border-radius: 40px;
+  padding-bottom: 100px;
+}
+
+.lyket-counter{
+  margin-top: 20px;
 }

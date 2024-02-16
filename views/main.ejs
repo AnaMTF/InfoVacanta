@@ -7,6 +7,8 @@
             <a id="newPostBtn" href="/new">Recenzie Nouă</a>
             <a id="logoutBtn" href="/logout">Logout</a>
             <ul id="postsList" class="list-group">
+                <% var i = 0; %>
+                <% var j = 0; %>
                 <% reviews.forEach(review => { %>
                 <li class="list-group-item list-group-item-action" id="postsItems">
                     <h2><%=review.destinationname %></h2>
@@ -16,6 +18,13 @@
                     <a class="edit" href="/modify">Editează</a>
                     <a class="delete" href="">Șterge</a>
                     <a class="comment" href="">Lasă un comentariu</a>
+                    <div class="lyket-counter"
+                    data-lyket-type="updown"
+                    data-lyket-id="my-<%=i%>-post"
+                    data-lyket-namespace="blog"
+                    data-lyket-template="simple"></div>
+                    <div data-lyket-type="rate" data-lyket-id="my-<%=j%>-post" data-lyket-show-rating="average"></div>
+                    <% i++; %>
                 </li>
                 <% }); %>
             </ul>

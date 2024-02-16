@@ -16,6 +16,7 @@ env.config();
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
+        j: 1,
         resave: false,
         saveUninitialized: true,
         cookie: {
@@ -94,7 +95,7 @@ app.get("/main", async (req, res) => {
                 destinations.destinationid = reviews.destinationid;",
             );
             const reviewsFromDatabase = result.rows;
-            res.render("main.ejs", { reviews: reviewsFromDatabase });
+            res.render("main.ejs", { reviews: reviewsFromDatabase, j: req.session.j });
         } catch (err) {
             console.log(err);
         }
@@ -106,7 +107,8 @@ app.get("/main", async (req, res) => {
 app.get("/new", (req, res) => {
     console.log("/new");
     console.log(req.session.passport.user); //<-- Testare (user primit de la passport)
-    res.render("new.ejs", { heading: "Recenzie nouă", submit: "Publică" });
+    req.session.j = req.session.j ? req.session.j + 1 : 1;
+    res.render("new.ejs", { heading: "Recenzie nouă", submit: "Publică", j: req.session.j });
 });
 app.get("/contact", (req, res) => {
     console.log("/contact");
