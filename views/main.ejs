@@ -23,7 +23,8 @@
                     data-lyket-id="my-<%=i%>-post"
                     data-lyket-namespace="blog"
                     data-lyket-template="simple"></div>
-                    <div data-lyket-type="rate" data-lyket-id="my-<%=j%>-post" data-lyket-show-rating="average"></div>
+                    <div data-lyket-type="rate" data-lyket-id="my-<%=review.reviewid%>-post" data-lyket-show-rating="average"></div>
+                    <% console.log(review); %>
                     <% i++; %>
                 </li>
                 <% }); %>

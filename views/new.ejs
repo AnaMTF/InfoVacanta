@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="css/new.css">
 
         <div class="container jumbotron centered">
+        <!-- Remove the code block that makes the API request -->
             <h1><%= heading %></h1>
 
             <% if (locals.post) { %>
@@ -19,8 +20,7 @@
                     required
                     rows="10"
                 ></textarea>
-                <div data-lyket-type="rate" data-lyket-id="my-<%=j%>-post" data-lyket-show-rating="user"></div>
-                <% j++; %>
+                <div data-lyket-type="rate" data-lyket-id="my-<%=starId%>-post" data-lyket-show-rating="user"></div>
                 <button class="full-width" type="submit" id="publicaBtn"><%= submit %></button>
             </form>
             <% } %>
