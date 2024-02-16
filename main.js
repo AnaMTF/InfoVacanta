@@ -82,7 +82,7 @@ app.get("/logout", (req, res) => {
 
 app.get("/main", async (req, res) => {
     console.log("/main");
-    console.log(req.session.passport.user); //<-- Testare (user primit de la passport)
+    //console.log(req.session.passport.user); //<-- Testare (user primit de la passport)
 
     if (req.isAuthenticated()) {
         // de facut: API pentru a prelua recenziile din baza de date
@@ -94,13 +94,65 @@ app.get("/main", async (req, res) => {
                 destinations.destinationid = reviews.destinationid;",
             );
             const reviewsFromDatabase = result.rows;
-            res.render("main.ejs", { reviews: reviewsFromDatabase });
+            res.render("main.ejs", { reviews: reviewsFromDatabase, user: req.session.passport.user });
         } catch (err) {
             console.log(err);
         }
     } else {
         res.redirect("/login");
     }
+});
+
+app.get("/reviews/delete/:id", async (req, res) => {
+    console.log("/reviews/delete/:id");
+    console.log(req.params.id); //<-- Testare
+
+    const reviewid = req.params.id;
+    try {
+        const result = await db.query("DELETE FROM reviews WHERE reviewid = $1", [reviewid]);
+        console.log(`Reviewul ${reviewid} a fost sters cu succes!`); //<-- Testare
+        res.redirect("/main");
+    } catch (err) {
+        console.log(err);
+    }
+});
+
+app.get("/modify/:id", async (req, res) => {
+    console.log("/modify/:id");
+    console.log(req.params.id); //<-- Testare
+
+    const reviewid = req.params.id;
+    try {
+        const result = await db.query(
+            "SELECT * FROM reviews WHERE reviewid = $1",
+            [reviewid]
+        );
+        const review = result.rows[0];
+        const starId = result.rows[0].reviewid;
+        res.render("modify.ejs", { heading: "Modifică recenzia", submit: "Publică schimbările", review: review, starId: starId });
+    } catch (err) {
+        console.log(err);
+    }
+});
+
+app.post("/api/reviews/:id", async (req, res) => {
+    console.log("/api/reviews/:id");
+    console.log(req.params.id); //<-- Testare
+    console.log(req.body); //<-- Testare
+
+    // const reviewid = req.params.id;
+    // const reviewdestination = req.body.destinationname;
+    // const reviewbody = req.body.reviewbody;
+    // const rating = req.body.rating;
+    // try {
+    //     const result = await db.query(
+    //         "UPDATE reviews SET reviewbody = $1, rating = $2 WHERE reviewid = $3",
+    //         [reviewbody, rating, reviewid]
+    //     );
+    //     res.redirect("/main");
+    // } catch (err) {
+    //     console.log(err);
+    // }
 });
 
 app.get("/new", async (req, res) => {
@@ -115,6 +167,7 @@ app.get("/new", async (req, res) => {
         console.log(err);
     }
 });
+
 app.get("/contact", (req, res) => {
     console.log("/contact");
     // console.log(req.session.passport.user);
@@ -126,6 +179,7 @@ app.get("/contact", (req, res) => {
     }
     // res.render("contact.ejs");
 });
+
 app.post("/reviews", async (req, res) => {
     console.log("/reviews");
     console.log(req.body);//<-- Testare
@@ -156,7 +210,6 @@ app.post("/reviews", async (req, res) => {
         console.log(err);
     }
 });
-
 
 // Autentificare cu email si parola
 app.post(
