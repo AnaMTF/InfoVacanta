@@ -15,17 +15,18 @@
                     <small> <%=review.reviewcategory %> </small>
                     <p><%=review.reviewbody%></p>
                     <small>By: <%=review.authornickname%> </small>
-                    <% if (review.authornickname == user.nickname) { %>
-                        <a class="edit" href="/modify/<%=review.reviewid%>">Editează</a>
-                        <a class="delete" href="/reviews/delete/<%=review.reviewid%>">Șterge</a>
-                    <% } %>
-                    <a class="comment" href="">Lasă un comentariu</a>
+                    <small>Date posted: <%=review.dateposted%></small>
+                    <div data-lyket-type="rate" data-lyket-id="my-<%=review.reviewid%>-post" data-lyket-show-rating="average"></div>
                     <div class="lyket-counter"
                     data-lyket-type="updown"
                     data-lyket-id="my-<%=i%>-post"
                     data-lyket-namespace="blog"
                     data-lyket-template="simple"></div>
-                    <div data-lyket-type="rate" data-lyket-id="my-<%=review.reviewid%>-post" data-lyket-show-rating="average"></div>
+                    <% if (review.authornickname == user.nickname) { %>
+                        <a class="edit" href="/modify/<%=review.reviewid%>">Editează</a>
+                        <a class="delete" href="/reviews/delete/<%=review.reviewid%>">Șterge</a>
+                    <% } %>
+                    <a class="comment" href="">Lasă un comentariu</a>
                     <% //console.log(review); %>
                     <% i++; %>
                 </li>

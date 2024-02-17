@@ -129,7 +129,15 @@ app.get("/modify/:id", async (req, res) => {
         );
         const review = result.rows[0];
         const starId = result.rows[0].reviewid;
-        res.render("modify.ejs", { heading: "Modifică recenzia", submit: "Publică schimbările", review: review, starId: starId });
+
+        const result2 = await db.query(
+            "SELECT destinationname FROM destinations WHERE destinationid = $1",
+            [review.destinationid]
+        );
+        const destinationname = result2.rows[0].destinationname;
+
+        console.log(review); //<-- Testare
+        res.render("modify.ejs", { heading: "Modifică recenzia", submit: "Publică schimbările", review: review, destinationname: destinationname, starId: starId });
     } catch (err) {
         console.log(err);
     }
@@ -140,19 +148,25 @@ app.post("/api/reviews/:id", async (req, res) => {
     console.log(req.params.id); //<-- Testare
     console.log(req.body); //<-- Testare
 
-    // const reviewid = req.params.id;
-    // const reviewdestination = req.body.destinationname;
-    // const reviewbody = req.body.reviewbody;
-    // const rating = req.body.rating;
-    // try {
-    //     const result = await db.query(
-    //         "UPDATE reviews SET reviewbody = $1, rating = $2 WHERE reviewid = $3",
-    //         [reviewbody, rating, reviewid]
-    //     );
-    //     res.redirect("/main");
-    // } catch (err) {
-    //     console.log(err);
-    // }
+    const reviewid = req.params.id;
+    const reviewdestination = req.body.destinationname;
+    const reviewbody = req.body.reviewbody;
+
+    try {
+        const result = await db.query(
+            "SELECT destinationid, destinationcategory FROM destinations WHERE destinationname = $1",
+            [reviewdestination]
+        );
+        const destinationid = result.rows[0].destinationid;
+        const destinationcategory = result.rows[0].destinationcategory;
+        const result2 = await db.query(
+            "UPDATE reviews SET reviewbody = $1, destinationid = $2, reviewcategory = $3 WHERE reviewid = $4",
+            [reviewbody, destinationid, destinationcategory, reviewid]
+        );
+        res.redirect("/main");
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 app.get("/new", async (req, res) => {

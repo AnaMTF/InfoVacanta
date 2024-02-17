@@ -28,3 +28,5 @@ create table reviews (
 	dateposted timestamp,
 	destinationId serial references destinations(destinationId)
 );
+
+alter table only reviews alter column dateposted set default CURRENT_TIMESTAMP;
