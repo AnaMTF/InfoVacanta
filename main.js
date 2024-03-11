@@ -55,6 +55,24 @@ app.get("/modify", (req, res) => {
     res.render("profil.ejs");
 });
 
+app.get("/statiuni", async (req, res) => {
+    console.log("/statiuni");
+
+    if (req.isAuthenticated()) {
+        try {
+            const result = await db.query(
+                "select * from destinations;",
+            );
+            const destinationsFromDatabase = result.rows;
+            res.render("statiuni.ejs", { statiuni: destinationsFromDatabase, user: req.session.passport.user });
+        } catch (err) {
+            console.log(err);
+        }
+    } else {
+        res.redirect("/login");
+    }
+});
+
 app.get("/login", (req, res) => {
     // Daca utilizatorul este autentificat, redirectioneaza-l catre pagina de secrete
     if (req.isAuthenticated()) {

@@ -1,0 +1,10 @@
+#cardDestinatii {
+    padding-bottom: 20px;
+    border-radius: 400px;
+    
+}
+
+.card, .card-img-top {
+    border-radius: 40px;
+    box-shadow: 6px 2px 10px rgba(57, 92, 167, 0.66);
+}

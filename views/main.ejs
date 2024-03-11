@@ -8,7 +8,7 @@
             <a id="logoutBtn" href="/logout">Logout</a>
             <ul id="postsList" class="list-group">
                 <% var i = 0; %>
-                <% var j = 0; %>
+                
                 <% reviews.forEach(review => { %>
                 <li class="list-group-item list-group-item-action" id="postsItems">
                     <h2><%=review.destinationname %></h2>
@@ -16,7 +16,7 @@
                     <p><%=review.reviewbody%></p>
                     <small>By: <%=review.authornickname%> </small>
                     <small>Date posted: <%=review.dateposted%></small>
-                    <div data-lyket-type="rate" data-lyket-id="my-<%=review.reviewid%>-post" data-lyket-show-rating="average"></div>
+                    <div id="starRating" data-lyket-type="rate" data-lyket-id="my-<%=review.reviewid%>-post" data-lyket-show-rating="average"></div>
                     <div class="lyket-counter"
                     data-lyket-type="updown"
                     data-lyket-id="my-<%=i%>-post"

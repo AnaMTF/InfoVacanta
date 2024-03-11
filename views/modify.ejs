@@ -7,7 +7,7 @@
             <form id="editForm" method="post" action="/api/reviews/<%=review.reviewid%>">
                 <input type="text" placeholder="Destinația turistică vizitată" name="destinationname" value="<%=destinationname %>" />
                 <textarea name="reviewbody" id="content" placeholder="Scrieți aici recenzia dumneavoastră..." rows="10"><%=review.reviewbody %></textarea>
-                <div data-lyket-type="rate" data-lyket-id="my-<%=starId%>-post" data-lyket-show-rating="user"></div>
+                <div id="starRating" data-lyket-type="rate" data-lyket-id="my-<%=starId%>-post" data-lyket-show-rating="user"></div>
                 <button class="full-width" type="submit" id="publicaBtn"><%= submit %></button>
             </form>
             <!-- Aici vine bara de stelute -->
