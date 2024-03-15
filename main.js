@@ -47,13 +47,9 @@ app.get("/profil", (req, res) => {
     res.render("profil.ejs");
 });
 
-app.get("/destinatii", (req, res) => {
-    res.render("destinatii.ejs");
-});
-
-app.get("/modify", (req, res) => {
-    res.render("profil.ejs");
-});
+// app.get("/modify", (req, res) => {
+//     res.render("profil.ejs");
+// });
 
 app.get("/statiuni", async (req, res) => {
     console.log("/statiuni");

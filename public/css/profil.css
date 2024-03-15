@@ -1,0 +1,87 @@
+.imagineProfil{
+    opacity: 1;
+    border-radius: 50%;
+    position: relative;
+    
+    margin-top: -200px;
+    margin-left: 50px;
+    width: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.jumbotron{
+    padding-top: 0px;
+}
+
+.bannerClass{
+    position: relative;
+    width: 945px;
+    height: 300px;
+    backface-visibility: hidden;
+}
+
+.profileClass{
+    margin-right: 4000px;
+  margin-top: 75px;
+}
+
+.profileClass:hover .imagineProfil{
+transform: scale(1.1);
+    transition: .5s ease;
+    opacity: 0.75;
+}
+
+.bannerClass:hover .bannerImg{
+    transform: scale(1.1);
+    transition: .5s ease;
+    opacity: 0.75;
+}
+
+.profileClass:hover .middleProfile{
+    opacity: 1;
+}
+
+.bannerClass:hover .middleBanner{
+    opacity: 1;
+}
+
+.middleProfile{
+    left: 18.5602% !important;
+}
+
+.middleProfile , .middleBanner {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textProfil, .textFundal {
+  background-color: #dd8cddf6;
+  color: white;
+  font-size: 14px;
+  padding: 13px 12px;
+  
+}
+
+.bannerImg {
+    width: 100%;
+    height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.bannerImg:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+    opacity: 0.75;
+}
+
+.middleProfile:hover {
+    opacity: 1;
+}
