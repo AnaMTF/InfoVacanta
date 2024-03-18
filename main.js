@@ -7,11 +7,14 @@ import { Strategy } from "passport-local";
 import session from "express-session";
 import GoogleStrategy from "passport-google-oauth2";
 import env from "dotenv";
+//import path from "path";
 
 const app = express();
 const port = 4000;
 const saltRounds = 10;
 env.config();
+
+//app.use(express.static(path.join(__dirname, "public")));
 
 app.use(
     session({
