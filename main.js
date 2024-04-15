@@ -47,7 +47,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/profil", (req, res) => {
-    res.render("profil.ejs");
+    res.render("profil.ejs", {
+        authoremail: req.session.passport.user.email,
+        authornickname: req.session.passport.user.nickname,
+        authorfullname: req.session.passport.user.fullname
+    });
 });
 
 // app.get("/modify", (req, res) => {
