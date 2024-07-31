@@ -17,7 +17,7 @@
 ### User profile
 ![user profile](images/Screenshot_6.png)
 ### Search settings
-![search settings](images/Screenshot_9.9png)
+![search settings](images/Screenshot_9.png)
 ### Destination presentation page
 ![destination presentation page](images/Screenshot_11.png)
 ### Destination presentation page (Map)
