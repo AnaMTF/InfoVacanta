@@ -1,0 +1,6 @@
+[submodule "infovacanta-react-frontend"]
+	path = infovacanta-react-frontend
+	url = https://github.com/AnaMTF/infovacanta-react-frontend
+[submodule "infovacanta-expressjs-backend"]
+	path = infovacanta-expressjs-backend
+	url = https://github.com/AnaMTF/infovacanta-expressjs-backend
